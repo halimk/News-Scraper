@@ -11,8 +11,8 @@ var router = express.Router();
 var scrape = require('../scripts/scrape.js');
 
 // bring headlines and notes from the controller
-var headlinesController = require('../controllers/headlines.js');
-var notesController = require('../controllers/notes.js');
+var headlinesController = require('../controllers/headline.js');
+var notesController = require('../controllers/note.js');
 
 // basic route use cb return json data from mongodb
 router.get('/', function(req, res) {

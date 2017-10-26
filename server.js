@@ -12,9 +12,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 // connect Handlebars to our Express app
-app.engine('handlebars', expressHandlebars({
-    defaultLayout: 'main'
-}));
+app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 // use bodyParser in our app
