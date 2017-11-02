@@ -70,7 +70,7 @@ app.get("/scrape", function(req, res){
 				  		if (error){
 				  			console.log("error: ", error);
 				  		}else{
-				  			console.log("new article scraped:", doc);
+				  			console.log("article scraped:", doc);
 				  		}
 				  	});
 				}
@@ -133,5 +133,5 @@ app.post("/articles/:id", function(request, response){
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
-    console.log("News Scraper is listening on ", port);
+    console.log("listening on", port);
 });
